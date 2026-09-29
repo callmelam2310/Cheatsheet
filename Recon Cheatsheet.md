@@ -1,7 +1,5 @@
 # Recon Cheatsheet
 
-> [!info] About
-> Organized **by goal, not by tool**. Each section is a task; every tool that serves it is listed together regardless of which project it comes from. Sources merged: Compass/HackTricks catalog + ProjectDiscovery suite + reconFTW workflow. Updated 2026-09-29.
 
 Recon flows outside-in. OSINT and passive steps **never touch the target**; autoscan steps are **noisy — get approval and verify by hand** before calling anything a finding.
 
@@ -31,8 +29,6 @@ Recon flows outside-in. OSINT and passive steps **never touch the target**; auto
 | [`lazyrecon`](https://github.com/nahamsec/lazyrecon) / [`LazyRecon`](https://github.com/nahamsec/lazyrecon) | lightweight bash recon wrappers for quick target sweeps. |
 | [`nuclei`](https://github.com/projectdiscovery/nuclei) workflows / [`pdtm`](https://github.com/projectdiscovery/pdtm) | ProjectDiscovery's own glue: `pdtm -ia` installs the suite; nuclei workflows chain templates. Roll your own pipeline with `subfinder \| dnsx \| naabu \| httpx \| nuclei \| notify`. |
 
-> [!tip] Build-your-own pipeline
-> The canonical PD chain is: `subfinder / chaos → dnsx → naabu → httpx → katana / urlfinder → nuclei → notify`, with `asnmap`, `cdncheck`, `tlsx`, `uncover`, `cloudlist` as expanders and `anew` to dedup between runs.
 
 ## 1. Profile the organization (OSINT)
 *Look at the org before the infrastructure. Nothing here touches the target.*

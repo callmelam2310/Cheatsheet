@@ -1,7 +1,5 @@
 # Web Pentest Cheatsheet
 
-> [!info] About
-> Organized **by goal (vulnerability class), not by tool**. All sources merged; no per-project labels. From Compass/HackTricks catalog + ProjectDiscovery + reconFTW vuln checks. Updated 2026-09-29.
 
 Testing a web app: recon & map → proxy setup → work each vulnerability class → review source → AI/LLM → payload/wordlist reference. Bulk automated scanners live in [[Recon Cheatsheet#6. Recon autoscan]] — noisy, always hand-verify.
 
